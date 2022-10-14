@@ -1,5 +1,5 @@
 export const endpoints = (operationId, param) => {
-  const baseUrl = 'http://localhost:3001/api';
+  const baseUrl = 'https://cap-paraffin.herokuapp.com/api';
 
   const endpointsList = {
     curriculum: baseUrl + `/curriculums/${param}`,

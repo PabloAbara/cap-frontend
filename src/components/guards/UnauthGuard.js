@@ -11,7 +11,7 @@ function UnuthGuard({ children }) {
 
   useEffect(() => {
     if (!currentUser) {
-      fetch(`http://localhost:3001/api/current_user`)
+      fetch(`https://cap-paraffin.herokuapp.com/api/current_user`)
         .then((response) => {
           if (response.ok) return response.json();
           signOut();

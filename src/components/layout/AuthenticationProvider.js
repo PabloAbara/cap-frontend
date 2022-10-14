@@ -13,7 +13,7 @@ const AuthenticationProvider = ({ children }) => {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
     };
-    fetch(`http://localhost:3001/users/sign_out`, requestOptions).then((response) => {
+    fetch(`https://cap-paraffin.herokuapp.com/users/sign_out`, requestOptions).then((response) => {
       if (response.ok) {
         setCurrentUser(undefined);
         if (router.pathname != '/') {
